@@ -1,7 +1,7 @@
 # Solidus Admin Bar
 
-[![CircleCI](https://circleci.com/gh/solidusio-contrib/solidus_admin_bar.svg?style=shield)](https://circleci.com/gh/solidusio-contrib/solidus_admin_bar)
-[![codecov](https://codecov.io/gh/solidusio-contrib/solidus_admin_bar/branch/master/graph/badge.svg)](https://codecov.io/gh/solidusio-contrib/solidus_admin_bar)
+[![CircleCI](https://circleci.com/gh/QuintinAdam/solidus_admin_bar.svg?style=shield)](https://circleci.com/gh/QuintinAdam/solidus_admin_bar)
+[![codecov](https://codecov.io/gh/QuintinAdam/solidus_admin_bar/branch/master/graph/badge.svg)](https://codecov.io/gh/QuintinAdam/solidus_admin_bar)
 
 <!-- Explain what your extension does. -->
 
