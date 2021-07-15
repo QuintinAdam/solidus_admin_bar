@@ -1,0 +1,22 @@
+<% if current_spree_user.try(:admin?) %>
+  <div id="admin_bar">
+    <strong><%= link_to t('spree.admin_bar.admin_dashboard_name'), admin_path %>: &nbsp;</strong>
+    <% if @product %>
+      <%= link_to t('spree.admin_bar.edit_product'), edit_admin_product_path(@product) %>
+      | <%= link_to t('spree.admin_bar.images'), admin_product_images_path(@product) %>
+      | <%= link_to t('spree.admin_bar.variants'), admin_product_variants_path(@product) %>
+      | <%= link_to t('spree.admin_bar.prices'), admin_product_prices_path(@product) %>
+      | <%= link_to t('spree.admin_bar.properties'), admin_product_product_properties_path(@product) %>
+      | <%= link_to t('spree.admin_bar.stock'), admin_product_stock_path(@product) %>
+      <% if defined? Spree::Relation %>
+        | <%= link_to t('spree.admin_bar.related'), related_admin_product_path(@product) %>
+      <% end %>
+      | <%= link_to t('spree.admin_bar.delete_product'), admin_product_path(@product), data: { confirm: t('spree.admin_bar.are_you_sure')}, method: :delete %>
+    <% elsif @taxon %>
+      <%= link_to t('spree.admin_bar.edit_taxonomy'), edit_admin_taxonomy_path(@taxon.taxonomy) %>
+      | <%= link_to 'Edit Taxon', edit_admin_taxonomy_taxon_path(@taxon.taxonomy.id, @taxon.id) %>
+    <% elsif defined? Spree::Page and @page %>
+      <%= link_to t('spree.admin_bar.edit_page'), edit_admin_page_path(@page) %>
+    <% end %>
+  </div>
+<% end %>
