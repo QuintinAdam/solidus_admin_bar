@@ -1,9 +1,15 @@
 # Solidus Admin Bar
 
 [![CircleCI](https://circleci.com/gh/QuintinAdam/solidus_admin_bar.svg?style=shield)](https://circleci.com/gh/QuintinAdam/solidus_admin_bar)
-[![codecov](https://codecov.io/gh/QuintinAdam/solidus_admin_bar/branch/master/graph/badge.svg)](https://codecov.io/gh/QuintinAdam/solidus_admin_bar)
+[![codecov](https://codecov.io/gh/QuintinAdam/solidus_admin_bar/branch/main/graph/badge.svg)](https://codecov.io/gh/QuintinAdam/solidus_admin_bar)
 
-This extension adds a admin navbar to the frontend of your Solidus store. It allows for a quick link to the admin dashboard. If you are on the taxon page it has quick links to edit the taxons. If you are in the product page, it has quick actions to all the product edit links.
+This extension adds an admin navbar to the frontend of your Solidus store. It allows for a quick link to the admin dashboard. 
+
+The admin bar gets displayed at the top of each page to users logged in as an admin. It works with following the entities:
+* Products
+* Taxons/Taxonomies
+* Pages  ([solidus_static_content](https://github.com/solidusio-contrib/solidus_static_content))
+* Related Products  ([solidus_related_products](https://github.com/solidusio-contrib/solidus_related_products))
 
 ## Installation
 
