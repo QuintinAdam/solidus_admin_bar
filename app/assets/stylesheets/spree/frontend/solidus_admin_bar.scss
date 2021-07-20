@@ -1,18 +1,16 @@
 #admin_bar {
-  font-size: 13px;
-  font-family: verdana, sans-serif;
+  font-size: 14px;
   background-color: #1D1D1D;
   text-align: center;
-  color: #fff !important;
+  color: #fff;
   padding: 2px;
 
   strong, a {
-    color: #fff !important;
-    font-family: verdana, sans-serif;
+    color: #fff;
   }
 
   a:hover {
-    color: #aaa !important;
+    color: #aaa;
     text-decoration: underline;
   }
 }

@@ -3,7 +3,7 @@
 [![CircleCI](https://circleci.com/gh/QuintinAdam/solidus_admin_bar.svg?style=shield)](https://circleci.com/gh/QuintinAdam/solidus_admin_bar)
 [![codecov](https://codecov.io/gh/QuintinAdam/solidus_admin_bar/branch/master/graph/badge.svg)](https://codecov.io/gh/QuintinAdam/solidus_admin_bar)
 
-This extention adds a admin navbar to the frontend of your Solidus store. It allows for a quick link to the admin dashboard. If you are on the taxon page it has quick links to edit the taxons. If you are in the product page, it has quick actions to all the product edit links.
+This extension adds a admin navbar to the frontend of your Solidus store. It allows for a quick link to the admin dashboard. If you are on the taxon page it has quick links to edit the taxons. If you are in the product page, it has quick actions to all the product edit links.
 
 ## Installation
 
@@ -21,7 +21,7 @@ bin/rails generate solidus_admin_bar:install
 
 ## Usage
 
-<!-- Explain how to use your extension once it's been installed. -->
+You can edit the style of the admin navbar and you can edit the admin bar view.
 
 ## Development
 
