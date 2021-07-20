@@ -9,7 +9,6 @@ module SolidusAdminBar
       def add_stylesheets
         inject_into_file 'vendor/assets/stylesheets/spree/frontend/all.css', " *= require spree/frontend/solidus_admin_bar\n", before: %r{\*/}, verbose: true # rubocop:disable Layout/LineLength
       end
-
     end
   end
 end
