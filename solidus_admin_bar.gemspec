@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = 'quintinjadam@gmail.com'
 
   spec.summary = 'Quick admin actions for Solidus frontend'
-  spec.description = 'Quick admin actions for Solidus frontend with configuerable placements.'
+  spec.description = 'Quick admin actions for Solidus frontend.'
   spec.homepage = 'https://github.com/QuintinAdam/solidus_admin_bar#readme'
   spec.license = 'BSD-3-Clause'
 

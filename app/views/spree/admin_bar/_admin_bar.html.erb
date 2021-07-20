@@ -11,7 +11,7 @@
       <% if defined? Spree::Relation %>
         | <%= link_to t('spree.admin_bar.related'), related_admin_product_path(@product) %>
       <% end %>
-      | <%= link_to t('spree.admin_bar.delete_product'), admin_product_path(@product), data: { confirm: t('spree.admin_bar.are_you_sure')}, method: :delete %>
+      <!-- | <%#= link_to t('spree.admin_bar.delete_product'), admin_product_path(@product), data: { confirm: t('spree.admin_bar.are_you_sure')}, method: :delete %> -->
     <% elsif @taxon %>
       <%= link_to t('spree.admin_bar.edit_taxonomy'), edit_admin_taxonomy_path(@taxon.taxonomy) %>
       | <%= link_to 'Edit Taxon', edit_admin_taxonomy_taxon_path(@taxon.taxonomy.id, @taxon.id) %>

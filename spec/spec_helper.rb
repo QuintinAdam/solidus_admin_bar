@@ -21,11 +21,24 @@ Dir["#{__dir__}/support/**/*.rb"].sort.each { |f| require f }
 # Requires factories defined in lib/solidus_admin_bar/testing_support/factories.rb
 SolidusDevSupport::TestingSupport::Factories.load_for(SolidusAdminBar::Engine)
 
+Capybara.register_driver :selenium_chrome_headless do |app|
+  browser_options = ::Selenium::WebDriver::Chrome::Options.new
+  browser_options.args << '--headless'
+  browser_options.args << '--disable-gpu'
+  browser_options.args << '--window-size=1920,1080'
+  Capybara::Selenium::Driver.new(app, browser: :chrome, options: browser_options)
+end
+
 RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
-  config.use_transactional_fixtures = false
+  config.use_transactional_fixtures = true
+
+  config.before :suite do
+    DatabaseCleaner.clean_with :truncation
+  end
 
   if Spree.solidus_gem_version < Gem::Version.new('2.11')
     config.extend Spree::TestingSupport::AuthorizationHelpers::Request, type: :system
   end
+
 end
